@@ -119,6 +119,12 @@ li a{
     padding-top: 1rem;
 }
 
+.sweetTypo{
+    @extend %secondTypo ;
+    font-size: 2rem;
+    color: nth($colorPalette, 5 );
+}
+
 /* Buttons */
 
 .cardButton{
@@ -190,6 +196,12 @@ li a{
     cursor: pointer;
 }
 
+.toastTypo{
+    @extend %secondTypo;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 /* NavBar */
 
 .headerHome {
@@ -239,7 +251,19 @@ li a {
 
 
 
-/* body */
+/* librerias */
+
+.toastFormato{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15vw;
+}
+
+.sweetFormat{
+    width: 52em;
+}
 
 /* footer */
 

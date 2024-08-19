@@ -13,7 +13,7 @@ html {
   font-style: normal;
 }
 
-.buttonCarrito, .buttonVerMasGirls, .buttonVerMas, .cardButton, .subtituloTypo, .carritoTypo, .copyTypo, .footerTypo, .footerTitleTypo, .priceTypo, .titleCard, li a, h3, h2 {
+.toastTypo, .buttonCarrito, .buttonVerMasGirls, .buttonVerMas, .cardButton, .sweetTypo, .subtituloTypo, .carritoTypo, .copyTypo, .footerTypo, .footerTitleTypo, .priceTypo, .titleCard, li a, h3, h2 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -100,6 +100,11 @@ li a {
   padding-top: 1rem;
 }
 
+.sweetTypo {
+  font-size: 2rem;
+  color: #8E8E8E;
+}
+
 /* Buttons */
 .cardButton {
   font-size: 2rem;
@@ -162,6 +167,11 @@ li a {
   cursor: pointer;
 }
 
+.toastTypo {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
 /* NavBar */
 .headerHome {
   padding-bottom: 60rem;
@@ -206,7 +216,18 @@ li a {
   background-color: rgba(228, 223, 204, 0.7882352941);
 }
 
-/* body */
+/* librerias */
+.toastFormato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15vw;
+}
+
+.sweetFormat {
+  width: 52em;
+}
+
 /* footer */
 .flexGeneralFooter {
   display: flex;

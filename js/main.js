@@ -83,7 +83,18 @@ const agregarAlCarrito = (producto) => {
 
     actualizarCarrito();
 
-    // aca va tostify
+    Toastify({
+        text: "Agregaste " + producto.titulo + " al carrito",
+        avatar: producto.img,
+        duration: 2500,
+        close: true,
+        className: "toastFormato",
+        className: "toastTypo",
+        style: {
+          background: "#B47F7D",
+          color: "#ffff"
+        },
+      }).showToast();
     
 }
 
@@ -138,6 +149,37 @@ function actualizarTotal() {
     let sumaTotal = carrito.reduce((acc, product) => acc + (product.precio * product.cantidad), 0 );
     carritoTotal.innerText = "$" + sumaTotal;
 }
+
+vaciarCarrito.addEventListener("click", () => {
+    const cantidadTotal = carrito.reduce((acc, prod) => acc + prod.cantidad, 0);
+    Swal.fire({
+        title: "¿Estas seguro de dejar sin productos el carrito?",
+        text: "No podras revertir este proceso",
+        icon: "warning",        
+        showCancelButton: true,
+        confirmButtonColor: "#4A8FA5",
+        cancelButtonColor: "#B47F7D",
+        confirmButtonText: "Si, borrar todo!",
+        customClass: {
+            popup: "sweetFormat",
+            text: "sweetTypo"
+        }
+      }).then((result) => {
+        if (result.isConfirmed) {
+            carrito.length = 0;
+            actualizarCarrito();
+          Swal.fire({
+            title: "Carrito Vacio!",
+            text: "El carrito quedo vacio",
+            icon: "success",
+            customClass: {
+                popup: 'sweetFormat',
+                text: "sweetTypo"
+              }
+          });
+        }
+      });
+})
 
 
 
