@@ -103,56 +103,94 @@
 
 .cardsGrid{
     display: grid;
-    row-gap: 8rem;
-    column-gap: 13.2rem;
-    grid-template-rows: 1fr 1fr 1fr;
+    // row-gap: 8rem;
+    // column-gap: 13.2rem;
+    // grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "cardOtto cardCuadros cardTsuki"
-    "cardLilo cardYoga cardGeminis"
-    "cardMaya cardLolo cardLali"    
-    ;
+    // grid-template-areas: 
+    // "cardOtto cardCuadros cardTsuki"
+    // "cardLilo cardYoga cardGeminis"
+    // "cardMaya cardLolo cardLali"    
+    // ;
+    gap: 8rem;
+    margin-bottom: 3rem;
 
 }
 
-.cardOtto{
-    grid-area: cardOtto;
+// .cardOtto{
+//     grid-area: cardOtto;
+// }
+
+// .cardCuadros{
+//     grid-area: cardCuadros;
+//     // justify-self: center;
+// }
+
+// .cardTsuki{
+//     grid-area: cardTsuki;
+//     // justify-self: end;
+// }
+
+// .cardLilo{
+//     grid-area: cardLilo;
+//     // justify-self: start;
+// }
+
+// .cardYoga{
+//     grid-area: cardYoga;
+//     // justify-self: center;
+// }
+// .cardGeminis{
+//     grid-area: cardGeminis;
+//     // justify-self: end;
+// }
+// .cardMaya{
+//     grid-area: cardMaya;
+//     // justify-self: start;
+// }
+// .cardLolo{
+//     grid-area: cardLolo;
+//     // justify-self: center;
+// }
+// .cardLilo{
+//     grid-area: cardLilo;
+//     // justify-self: end;
+// }
+
+.sectionCarrito{
+    background-color: nth($colorPalette, 3 );
+    padding-block: 1rem;
+    margin-top: 10rem;
 }
 
-.cardCuadros{
-    grid-area: cardCuadros;
-    // justify-self: center;
+.subtitulo{
+    display: flex;
+    flex-direction: row;
+    
 }
 
-.cardTsuki{
-    grid-area: cardTsuki;
-    // justify-self: end;
+.paddCant{
+    padding-left: 24rem;
 }
 
-.cardLilo{
-    grid-area: cardLilo;
-    // justify-self: start;
+.paddPrecio{
+    padding-left: 22rem;
 }
 
-.cardYoga{
-    grid-area: cardYoga;
-    // justify-self: center;
+.paddSubtotal{
+    padding-left: 28rem;
 }
-.cardGeminis{
-    grid-area: cardGeminis;
-    // justify-self: end;
+
+.productosFormato{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block: 1rem;
+
 }
-.cardMaya{
-    grid-area: cardMaya;
-    // justify-self: start;
-}
-.cardLolo{
-    grid-area: cardLolo;
-    // justify-self: center;
-}
-.cardLilo{
-    grid-area: cardLilo;
-    // justify-self: end;
+
+.lineCarrito{
+    width: 100%;
 }
 .flexSpotify{
     display: flex;
@@ -165,4 +203,14 @@
 .paddSpotify{
     padding-left: 21rem;
     padding-right: 21rem;
+}
+
+.emptyclass{
+    display: none;
+}
+
+.flexButtonCarrito{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end
 }

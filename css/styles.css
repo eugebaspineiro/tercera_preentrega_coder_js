@@ -13,7 +13,7 @@ html {
   font-style: normal;
 }
 
-.buttonVerMasGirls, .buttonVerMas, .cardButton, .copyTypo, .footerTypo, .footerTitleTypo, .priceTypo, .titleCard, li a, h3, h2 {
+.buttonCarrito, .buttonVerMasGirls, .buttonVerMas, .cardButton, .subtituloTypo, .carritoTypo, .copyTypo, .footerTypo, .footerTitleTypo, .priceTypo, .titleCard, li a, h3, h2 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -87,6 +87,19 @@ li a {
   color: #4A8FA5;
 }
 
+.carritoTypo {
+  font-size: 1.5rem;
+  color: #1D1D1D;
+  padding-block: 1rem;
+}
+
+.subtituloTypo {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #8E8E8E;
+  padding-top: 1rem;
+}
+
 /* Buttons */
 .cardButton {
   font-size: 2rem;
@@ -125,6 +138,28 @@ li a {
   padding-top: 0.9rem;
   padding-bottom: 0.9rem;
   text-align: center;
+}
+
+.buttonCarrito {
+  font-size: 2rem;
+  font-weight: 400;
+  color: white;
+  background-color: #4A8FA5;
+  border-radius: 10rem;
+  width: 26rem;
+  border-color: #4A8FA5;
+  padding-top: 0.9rem;
+  padding-bottom: 0.9rem;
+  text-align: center;
+  margin-block: 2rem;
+}
+
+.btnEliminar {
+  color: #8E8E8E;
+  font-size: 2rem;
+  border: 0;
+  background-color: #E4DFCC;
+  cursor: pointer;
 }
 
 /* NavBar */
@@ -315,47 +350,43 @@ footer {
 
 .cardsGrid {
   display: grid;
-  row-gap: 8rem;
-  column-gap: 13.2rem;
-  grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "cardOtto cardCuadros cardTsuki" "cardLilo cardYoga cardGeminis" "cardMaya cardLolo cardLali";
+  gap: 8rem;
+  margin-bottom: 3rem;
 }
 
-.cardOtto {
-  grid-area: cardOtto;
+.sectionCarrito {
+  background-color: #E4DFCC;
+  padding-block: 1rem;
+  margin-top: 10rem;
 }
 
-.cardCuadros {
-  grid-area: cardCuadros;
+.subtitulo {
+  display: flex;
+  flex-direction: row;
 }
 
-.cardTsuki {
-  grid-area: cardTsuki;
+.paddCant {
+  padding-left: 24rem;
 }
 
-.cardLilo {
-  grid-area: cardLilo;
+.paddPrecio {
+  padding-left: 22rem;
 }
 
-.cardYoga {
-  grid-area: cardYoga;
+.paddSubtotal {
+  padding-left: 28rem;
 }
 
-.cardGeminis {
-  grid-area: cardGeminis;
+.productosFormato {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-block: 1rem;
 }
 
-.cardMaya {
-  grid-area: cardMaya;
-}
-
-.cardLolo {
-  grid-area: cardLolo;
-}
-
-.cardLilo {
-  grid-area: cardLilo;
+.lineCarrito {
+  width: 100%;
 }
 
 .flexSpotify {
@@ -370,6 +401,16 @@ footer {
 .paddSpotify {
   padding-left: 21rem;
   padding-right: 21rem;
+}
+
+.emptyclass {
+  display: none;
+}
+
+.flexButtonCarrito {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=styles.css.map */

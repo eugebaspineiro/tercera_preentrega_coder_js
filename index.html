@@ -19,13 +19,6 @@
             <div class="padLogo">
                 <img src="./assets/logo_nav.svg" alt="logo de Baby Bear">
             </div>
-            <!-- <div>
-                <ul>
-                    <li><a href="./pages/boys.html">Niños</a></li>
-                    <li><a href="./pages/girls.html">Niñas</a></li>
-                    <li><a href="./pages/baby.html">Bebes</a></li>
-                </ul>
-            </div> -->
             <div class="navIcon">
                 <ion-icon name="search-outline" class="padIcon"></ion-icon>
                 <ion-icon name="person-outline" class="padIcon"></ion-icon>
@@ -77,88 +70,36 @@
                 <h3>Filtros</h3>
             </div> -->
         </section>
-        <section class="marginBanner cardsGrid">
-            <article class="cardOtto">
-                <img src="./assets/chaleco_otto.jpg" alt="niño en patineta usando un chaleco rojo">
-                <div class="nameFlex">
-                    <p class="titleCard">Chaleco Otto</p>
-                    <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
+        <section class="marginBanner cardsGrid" id="productos">
+            <!-- esta seccion se llena con js -->
+        </section>
+        <section class="sectionCarrito">
+            <div class="marginBanner">
+                <h2 class="textDestacados">Carrito</h2>
+                <div class="carrito">
+                    <div>
+                        <div class="subtitulo subtituloTypo">
+                            <p>Producto/s</p>
+                            <p class="paddCant">Cantidad</p>
+                            <p class="paddPrecio">Precio</p>
+                            <p class="paddSubtotal">Subtotal</p>                                                       
+                        </div>
+                        <img src="./assets/line_carrito.svg" alt="" class="lineCarrito">
+                    </div>
+                    <div id="carrito-vacio" class="">
+                        <p class="carritoTypo">No agregaste nada al carrito aun</p>
+                    </div>
+                    <div class="carrito-productos emptyclass" id="carrito-productos">
+                        <!-- esta seccion se llena con js -->
+                    </div>                    
+                    <div class="carrito-total">
+                        <h2>Total: <span id="carrito-total">$0</span></h2>
+                    </div>
+                    <div class="flexButtonCarrito">
+                        <button class="emptyclass buttonCarrito" id="vaciar-carrito">Vaciar carrito</button>
+                    </div>
                 </div>
-                <p class="priceTypo marginPrice">$00.000</p>
-                <input type="button" value="Agregar al carrito" class="cardButton">
-            </article>
-            <article class="cardCuadros">
-                <img src="./assets/camisa_cuadros.jpg" alt="niño en la naturaleza usando una camisa a cuadros y lentes de sol">
-                <div class="nameFlex">
-                    <p class="titleCard">Camisa Cuadros</p>
-                    <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
-                </div>
-                <p class="priceTypo marginPrice">$00.000</p>
-                <input type="button" value="Agregar al carrito" class="cardButton">
-            </article>
-            <article class="cardTsuki">
-                <img src="./assets/remera_tsuki.jpg" alt="niña caminando, lleva una patineta en el brazo y usa la remera tsuki colo rojo">
-                <div class="nameFlex">
-                    <p class="titleCard">Remera Tsuki</p>
-                    <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
-                </div>
-                <p class="priceTypo marginPrice">$00.000</p>
-                <input type="button" value="Agregar al carrito" class="cardButton">
-            </article>
-            <article class="cardLilo">
-                <img src="./assets/vestido_lilo.jpg" alt="niña bajando una escalera, usando el vestido lilo">
-                <div class="nameFlex">
-                    <p class="titleCard">Vestido Lilo</p>
-                    <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
-                </div>
-                <p class="priceTypo marginPrice">$00.000</p>
-                <input type="button" value="Agregar al carrito" class="cardButton">
-            </article>
-            <article class="cardYoga">
-                <img src="./assets/camisa_yoga.jpg" alt="niño en un jardin usando la camisa yoga de baby bear">
-                <div class="nameFlex">
-                    <p class="titleCard">Camisa Yoga</p>
-                    <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
-                </div>
-                <p class="priceTypo marginPrice">$00.000</p>
-                <input type="button" value="Agregar al carrito" class="cardButton">
-            </article>
-            <article class="cardGeminis">
-                <img src="./assets/capri_geminis.jpg" alt="niña tocando la guitarra en la calle, usando capri geminis">
-                <div class="nameFlex">
-                    <p class="titleCard">Capri Geminis</p>
-                    <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
-                </div>
-                <p class="priceTypo marginPrice">$00.000</p>
-                <input type="button" value="Agregar al carrito" class="cardButton">
-            </article>
-            <article class="cardMaya">
-                <img src="./assets/remera_maya.jpg" alt="niña jugando, usando la remera maya de baby bear. La remera maya es una remera con rayas finitas azules">
-                <div class="nameFlex">
-                    <p class="titleCard">Remera Maya</p>
-                    <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
-                </div>
-                <p class="priceTypo marginPrice">$00.000</p>
-                <input type="button" value="Agregar al carrito" class="cardButton">
-            </article>
-            <article class="cardLolo">
-                <img src="./assets/campera_lolo.jpg" alt="niño caminando de la mano de su madre usando la campera lolo de baby bear, es una campera de media estacion tejida">
-                <div class="nameFlex">
-                    <p class="titleCard">Campera Lolo</p>
-                    <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
-                </div>
-                <p class="priceTypo marginPrice">$00.000</p>
-                <input type="button" value="Agregar al carrito" class="cardButton">
-            </article>
-            <article class="cardLali">
-                <img src="./assets/vestido_lali.jpg" alt="niña jugando, usando vestido lali de baby bear, es un vestido manga largas a cuadros blanco y amarillo">
-                <div class="nameFlex">
-                    <p class="titleCard">Vestido Lali</p>
-                    <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
-                </div>
-                <p class="priceTypo marginPrice">$00.000</p>
-                <input type="button" value="Agregar al carrito" class="cardButton">
-            </article>
+            </div>
         </section>
         <section class="marginBanner flexSpotify">
             <div>
@@ -214,8 +155,9 @@
             </div>
         </section>
     </footer>
-
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>

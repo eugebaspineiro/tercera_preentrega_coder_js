@@ -104,6 +104,21 @@ li a{
     color: nth($colorPalette, 2 );
 }
 
+.carritoTypo{
+    @extend %secondTypo;
+    font-size: 1.5rem;
+    color: nth($colorPalette, 4 );
+    padding-block: 1rem;
+}
+
+.subtituloTypo{
+    @extend %secondTypo;
+    font-size: 2rem;
+    font-weight: 400;
+    color: nth($colorPalette, 5 );
+    padding-top: 1rem;
+}
+
 /* Buttons */
 
 .cardButton{
@@ -149,6 +164,30 @@ li a{
     padding-bottom: 0.9rem;
     text-align: center;
 
+}
+
+.buttonCarrito{
+    @extend %secondTypo;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #ffff;
+    background-color: nth($colorPalette, 2 );
+    border-radius: 10rem;
+    width: 26rem;
+    border-color: nth($colorPalette, 2 );
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    text-align: center;
+    margin-block: 2rem;
+
+}
+
+.btnEliminar{
+    color: nth($colorPalette, 5 );
+    font-size: 2rem;
+    border: 0;
+    background-color: nth($colorPalette, 3 );
+    cursor: pointer;
 }
 
 /* NavBar */
