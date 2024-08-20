@@ -1,7 +1,15 @@
-
-
 const contenedorCarrito = document.querySelector("#pag-carrito");
+
 let total= 0;
+
+let valordescuento= 0;
+
+// Codigos de descuento
+
+const descuentos = {
+    "DESC10" : 0.10,
+    "DESC20" : 0.20,
+};
 
 let carritoLS = JSON.parse(localStorage.getItem("carrito"));
 
@@ -43,17 +51,66 @@ agregarSubtotal();
 
 const contenedorTotal = document.querySelector("#totalisimo");
 
-const agregarTotalisimo = () => {
+const agregarTotalisimo = (nuevototal) => {
+    contenedorTotal.innerHTML = "";
     let div = document.createElement("div");
     div.classList.add("flexSubtotal", "totalTypo");
     div.innerHTML = `
         <p> Total </p>
-        <p>$ ${total} </p>
+        <p>$ ${nuevototal} </p>
     `;
     
     contenedorTotal.append(div);
     console.log(total);
 }
 
-agregarTotalisimo();
+agregarTotalisimo(total);
+
+// formulario descuento
+
+const alertaForm = document.querySelector("#alerta-form");
+const alertaImput = document.querySelector("#cod-descuento");
+const alertaSubmit = document.querySelector("#alerta-submit");
+
+alertaForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const codigoIngresado = alertaImput.value.trim();
+    let descuento = descuentos[codigoIngresado];
+
+    if (descuento) {
+        valordescuento = descuento;
+        let nuevototal= total - (total * descuento);
+        agregarTotalisimo(nuevototal);
+        mostrardescuento();
+    } else {
+        Swal.fire({
+            icon: "error",
+            title: "Codigo Incorrecto",
+            text: "El codigo de descuento ingresado no es correcto!",
+            footer: '<a href="#">Why do I have this issue?</a>'
+          });
+
+    }
+
+});
+
+const contenedorDescuento = document.querySelector("#codigo-desc");
+
+const mostrardescuento = () => {
+    contenedorDescuento.innerHTML="";
+    let div = document.createElement("div");
+    div.classList.add("flexSubtotal", "descuentoTypo");
+    div.innerHTML = `
+        <p> Descuento </p>
+        <p> ${valordescuento * 100} %</p>
+    `;
+    
+    contenedorDescuento.append(div);
+};
+
+
+
+
+
 

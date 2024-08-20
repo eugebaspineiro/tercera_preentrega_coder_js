@@ -103,59 +103,16 @@
 
 .cardsGrid{
     display: grid;
-    // row-gap: 8rem;
-    // column-gap: 13.2rem;
-    // grid-template-rows: 1fr 1fr 1fr;
+
     grid-template-columns: 1fr 1fr 1fr;
-    // grid-template-areas: 
-    // "cardOtto cardCuadros cardTsuki"
-    // "cardLilo cardYoga cardGeminis"
-    // "cardMaya cardLolo cardLali"    
-    // ;
+
     gap: 8rem;
     margin-bottom: 3rem;
 
 }
 
-// .cardOtto{
-//     grid-area: cardOtto;
-// }
+  
 
-// .cardCuadros{
-//     grid-area: cardCuadros;
-//     // justify-self: center;
-// }
-
-// .cardTsuki{
-//     grid-area: cardTsuki;
-//     // justify-self: end;
-// }
-
-// .cardLilo{
-//     grid-area: cardLilo;
-//     // justify-self: start;
-// }
-
-// .cardYoga{
-//     grid-area: cardYoga;
-//     // justify-self: center;
-// }
-// .cardGeminis{
-//     grid-area: cardGeminis;
-//     // justify-self: end;
-// }
-// .cardMaya{
-//     grid-area: cardMaya;
-//     // justify-self: start;
-// }
-// .cardLolo{
-//     grid-area: cardLolo;
-//     // justify-self: center;
-// }
-// .cardLilo{
-//     grid-area: cardLilo;
-//     // justify-self: end;
-// }
 
 .sectionCarrito{
     background-color: nth($colorPalette, 3 );

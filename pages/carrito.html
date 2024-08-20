@@ -48,8 +48,10 @@
             <div class="sectionDescuento">
                 <p class="descuentoTypo">¿Tenes codigo de descuento?</p>
                 <div class="sectionCodigo">
-                    <input type="text" name="codDescuento" id="cod-descuento" class="codDescuento">
-                    <input type="submit" class="btnDescuento">
+                    <form action="" id="alerta-form" class="sectionCodigo">
+                        <input type="text" id="cod-descuento" class="codDescuento">
+                        <input type="submit" id="alerta-submit" class="btnDescuento" value="Enviar">
+                    </form>
                 </div>
             </div>
 
@@ -62,9 +64,7 @@
            
                 </div>
             </div>
-            <!-- <div>
-                <img src="../assets/line_carrito.svg" alt="" class="imgTamano">
-            </div> -->
+
             <div>
                 <div class="sectionTotal">
                     <h3 class="compraTypo">Detalle de la compra</h3>
@@ -72,9 +72,9 @@
                     <!-- se agrega en js -->
                     </div>
 
-                    <div class="flexSubtotal descuentoTypo">
-                        <p>Descuento</p>
-                        <p>0000</p>
+                    <div id="codigo-desc">
+                        <!-- se agrega en js -->
+             
                     </div>
                     <div id="totalisimo">
                 
