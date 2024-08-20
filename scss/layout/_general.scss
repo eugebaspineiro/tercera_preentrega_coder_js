@@ -125,6 +125,39 @@ li a{
     color: nth($colorPalette, 5 );
 }
 
+.miCarritoTypo{
+    @extend %secondTypo;
+    font-size:2.5rem;
+    color: nth($colorPalette , 1 );
+}
+
+.descuentoTypo{
+    @extend %secondTypo;
+    font-size: 1.5rem;
+    color: nth($colorPalette, 4);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.totalTypo{
+    @extend %secondTypo;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: nth($colorPalette, 4);
+    text-align: center;
+    padding-bottom: 1rem;
+    
+}
+
+.compraTypo{
+    @extend %secondTypo;
+    font-size: 2rem;
+    font-weight: 600;
+    color: nth($colorPalette, 4);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 /* Buttons */
 
 .cardButton{
@@ -201,6 +234,47 @@ li a{
     font-size: 1.5rem;
     font-weight: 300;
 }
+
+.btnDescuento{
+    @extend %secondTypo;
+    font-size: 1.5rem;
+    background-color: nth($colorPalette, 2 );
+    border: 0;
+    border-radius: 1rem;
+    width: 15rem;
+    color: #ffff;
+    padding: .5rem;
+    margin-left: 2rem;
+}
+
+.btnComprar{
+    @extend %secondTypo;
+    font-size: 2rem;
+    background-color: nth($colorPalette, 2 );
+    border: 0;
+    border-radius: 2rem;
+    width: 15vw;
+    color: #ffff;
+    padding: .5rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+
+}
+
+.btnSeguirComprando{
+    @extend %secondTypo;
+    font-size: 2rem;
+    background-color: #ffff;
+    border-color:nth($colorPalette, 1 ) ;
+    border-radius: 2rem;
+    width: 15vw;
+    color: nth($colorPalette, 1 );
+    padding: .5rem;
+    margin-left: 2rem;
+    margin-block: 1rem;
+
+}
+
 
 /* NavBar */
 

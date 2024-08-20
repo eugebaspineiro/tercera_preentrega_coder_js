@@ -13,7 +13,7 @@ html {
   font-style: normal;
 }
 
-.toastTypo, .buttonCarrito, .buttonVerMasGirls, .buttonVerMas, .cardButton, .sweetTypo, .subtituloTypo, .carritoTypo, .copyTypo, .footerTypo, .footerTitleTypo, .priceTypo, .titleCard, li a, h3, h2 {
+.btnSeguirComprando, .btnComprar, .btnDescuento, .toastTypo, .buttonCarrito, .buttonVerMasGirls, .buttonVerMas, .cardButton, .compraTypo, .totalTypo, .descuentoTypo, .miCarritoTypo, .sweetTypo, .subtituloTypo, .carritoTypo, .copyTypo, .footerTypo, .footerTitleTypo, .priceTypo, .titleCard, li a, h3, h2 {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -105,6 +105,34 @@ li a {
   color: #8E8E8E;
 }
 
+.miCarritoTypo {
+  font-size: 2.5rem;
+  color: #B47F7D;
+}
+
+.descuentoTypo {
+  font-size: 1.5rem;
+  color: #1D1D1D;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.totalTypo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1D1D1D;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.compraTypo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1D1D1D;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
 /* Buttons */
 .cardButton {
   font-size: 2rem;
@@ -170,6 +198,41 @@ li a {
 .toastTypo {
   font-size: 1.5rem;
   font-weight: 300;
+}
+
+.btnDescuento {
+  font-size: 1.5rem;
+  background-color: #4A8FA5;
+  border: 0;
+  border-radius: 1rem;
+  width: 15rem;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 2rem;
+}
+
+.btnComprar {
+  font-size: 2rem;
+  background-color: #4A8FA5;
+  border: 0;
+  border-radius: 2rem;
+  width: 15vw;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.btnSeguirComprando {
+  font-size: 2rem;
+  background-color: white;
+  border-color: #B47F7D;
+  border-radius: 2rem;
+  width: 15vw;
+  color: #B47F7D;
+  padding: 0.5rem;
+  margin-left: 2rem;
+  margin-block: 1rem;
 }
 
 /* NavBar */
@@ -432,6 +495,99 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.listaProdFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.sectionOne {
+  display: flex;
+  flex-direction: column;
+  width: 55vw;
+}
+
+.imgTamano {
+  width: 55vw;
+}
+
+.sectionCero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+
+.sectionDescuento {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  padding: 2rem 7rem 2rem 5rem;
+  background-color: #E4DFCC;
+}
+
+.codDescuento {
+  border-radius: 1rem;
+  border-color: white;
+  padding: 0.5rem;
+}
+
+.sectionCodigo {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionTotal {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  padding: 2rem 7rem 2rem 5rem;
+  background-color: #E4DFCC;
+  margin-top: 2rem;
+}
+
+.sectionCompra {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.finalizarCompra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 1rem;
+}
+
+.marginMain {
+  margin-bottom: 20rem;
+}
+
+.flexSubtotal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.productoTamano {
+  width: 5rem;
+  margin-right: 2rem;
+}
+
+.productoFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 55vw;
+}
+
+.compraFlex {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */

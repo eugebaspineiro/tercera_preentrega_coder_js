@@ -4,36 +4,42 @@ const productosDestacados = [
         titulo: "Chaleco Otto",
         precio: 3000,
         img: "./assets/chaleco_otto.jpg",
+        imgcar: "../assets/chaleco_otto.jpg",
     },
     {
         id: "camisa-cuadros",
         titulo: "Camisa Cuadros",
         precio: 5000,
         img: "./assets/camisa_cuadros.jpg",
+        imgcar: "../assets/camisa_cuadros.jpg",
     },
     {
         id: "remera-tsuki",
         titulo: "Remera Tsuki",
         precio: 3500,
         img: "./assets/remera_tsuki.jpg",
+        imgcar: "../assets/remera_tsuki.jpg",
     },
     {
         id: "vestido-lilo",
         titulo: "Vestido Lilo",
         precio: 12000,
-        img: "./assets/vestido_lilo.jpg",    
+        img: "./assets/vestido_lilo.jpg", 
+        imgcar: "../assets/vestido_lilo.jpg",    
     },
     {
         id: "camisa-yoga",
         titulo: "Camisa Yoga",
         precio: 8000,
-        img: "./assets/camisa_yoga.jpg",   
+        img: "./assets/camisa_yoga.jpg",
+        imgcar: "../assets/camisa_yoga.jpg",   
     },
     {
         id: "capri-geminis",
         titulo: "Capri Geminis",
         precio: 12000,
-        img: "./assets/capri_geminis.jpg",   
+        img: "./assets/capri_geminis.jpg", 
+        imgcar: "../assets/capri_geminis.jpg",   
     }
 
 ];
@@ -50,9 +56,9 @@ const irAlCarrito = document.querySelector("#ir-al-carrito");
 productosDestacados.forEach((producto) => {
 
     let div = document.createElement("div");
-    // div.classList.add("flexarticle");
+ 
     div.innerHTML = `
-        <img src="${producto.img}" alt="niño en patineta usando un chaleco rojo">
+        <img src="${producto.img}">
         <div class="nameFlex">
         <p class="titleCard">${producto.titulo}</p>
         <ion-icon name="heart-outline" class="heartIcon"></ion-icon>
